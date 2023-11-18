@@ -43,6 +43,7 @@ if __name__ == "__main__":
     # Variables to change
     image_path = "./Code/image.png"
     pixel_size = 10
+    start_pos = [-200, 300]
     drawing_speed = "fastest"
     
     # Get pixels
@@ -56,15 +57,13 @@ if __name__ == "__main__":
     t.colormode(255)
     t.speed(drawing_speed)
     
-    start_cord = [-200, 300]
-    
     for row in pixels:
         t.up()
-        t.goto(start_cord)
+        t.goto(start_pos)
         t.down()
         for pixel in row:
             draw_pixel(pixel, pixel_size)
             
-        start_cord[1] -= pixel_size
+        start_pos[1] -= pixel_size
     
     t.done()

@@ -9,6 +9,8 @@
 
  3. You can change drawing speed and pixel size in the file "main.py"
 
+ 4. You can also change start position on this file in variable "start_pos"
+
 # Python version
 
 I used python version 3.11.5 
